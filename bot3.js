@@ -1,3 +1,8 @@
+//Customizeable variables:
+const botname = "3urobeat's Comment Bot 3";
+var quotes = ['Have a nice day!','Have a wonderful day!','Have a great day!','Have a nice week!','Have a great week!','You are an amazing person','I hope you have a good day!','Have a nice day my friend','Signed by https://steamcommunity.com/id/3urobeat/'];
+//End
+
 const SteamUser = require('steam-user');
 const SteamCommunity = require('steamcommunity');
 
@@ -10,7 +15,6 @@ const d = function d() { return new Date(); }
 var randomstring = arr => arr[Math.floor(Math.random() * arr.length)];
 
 const bootstart = d()
-const botname = "3urobeat's Comment Bot 3";
 
 const logOnOptions = {
   accountName: logininfo.bot3accountName,
@@ -58,7 +62,7 @@ bot.on('friendMessage', function(steamID, message) {
       bot.chatMessage(steamID, "Type !comment to get a free comment!\nType !ping for a pong!\nType !owner to check out my owner's profile!\n\nJoin my !group")
       break;
     case '!comment':
-      community.postUserComment(steamID, randomstring(['Have a nice day!','Have a wonderful day!','Have a great day!','Have a nice week!','Have a great week!','You are an amazing person','I hope you have a good day!','Have a nice day my friend','Signed by https://steamcommunity.com/id/3urobeat/']), (error) => {
+      community.postUserComment(steamID, randomstring(quotes), (error) => {
         if(error !== null) {
           console.log("postUserComment error: " + error);
           bot.chatMessage(steamID, 'postUserComment error: ' + error)
@@ -75,9 +79,6 @@ bot.on('friendMessage', function(steamID, message) {
       break;
     case '!group':
       bot.chatMessage(steamID, "Join my group here: https://steamcommunity.com/groups/3urobeatGroup")
-      break;
-    case '!test':
-      bot.chatMessage(steamID, steamID.accountName)
       break;
     default:
       bot.chatMessage(steamID, "I don't know that command. Type !help for more info.")        
