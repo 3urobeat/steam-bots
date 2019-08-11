@@ -1,6 +1,6 @@
 //Customizeable variables:
 //Add all profile IDs like this: ["ID1","ID2","ID3"] You can press enter after every comma so that the id's are underneath each other or do it like in the example.
-const steamIDsToCommentOn = [ 
+const steamIDsToCommentOn = [
 	"ID1",
 	"ID2",
 	"ID3"
@@ -44,7 +44,11 @@ bot.logOn(logOnOptions);
 bot.on('loggedOn', () => {
 	logger(' ')
 	logger(' ')
-	fs.appendFileSync('./output.txt', 'All IDs:\n' + steamIDsToCommentOn)
+	fs.appendFileSync('./output.txt', 'All IDs: [\n')
+	steamIDsToCommentOn.forEach(function(element) {
+		fs.appendFileSync('./output.txt', '"' + element + '",\n')
+	});
+	fs.appendFileSync('./output.txt', ']')
 	logger(' ')
 	logger('*---------------------*')
 	logger('Bot ' + version + ' successfully logged in.');
@@ -72,8 +76,11 @@ bot.on('loggedOn', () => {
 							logger(" ")					
 							logger("Skipped remaining accounts because of comment cooldown! You can retry them later!")
 							logger('*---------------------*')
-							logger("steamID's of failed or skipped comments: \n")
-							logger(steamIDsToCommentOn)
+							logger("steamID's of failed or skipped comments: [\n")
+							steamIDsToCommentOn.forEach(function(element) {
+								logger('"' + element + '",\n');
+							});
+							logger("]")
 							logger('*---------------------*')
 							logger('Check output.txt! Quitting in 5 seconds...')
 							setTimeout(() => {
@@ -91,7 +98,11 @@ bot.on('loggedOn', () => {
 						logger("There were no failed comments!")
 					} else {
 						logger("Check output.txt!")
-						logger("steamID's of failed or skipped comments: \n" + steamIDsToCommentOn)
+						logger("steamID's of failed or skipped comments: [\n")
+						steamIDsToCommentOn.forEach(function(element) {
+							logger('"' + element + '",\n');
+						});	
+						logger("]")
 					}
 					logger('Quitting in 5 seconds...')
 					setTimeout(() => {
