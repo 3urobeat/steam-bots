@@ -1,6 +1,6 @@
 <div align="center">
 	<h1 align="center">~ Steam Bots Repository ~</h1>
-	<strong>Request comments or comment with a few clicks under a bunch of profiles!</strong>
+	<strong>Request comments or comment with a few clicks under a bunch of profiles!</strong><br />Read more in the README.md's in the specific folders.<br /><br />
 </div>  
 
 This repository features a small collection of steam bots.  
