@@ -1,4 +1,4 @@
-# steam-bot
- A bot for requesting comments on their profiles.
+# steam-bots
+ A collection of small steam bots made by me.
 
  Thanks to this guide: https://github.com/andrewda/node-steam-guide

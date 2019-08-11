@@ -1,8 +1,8 @@
 {
-  "name": "steam-bot",
+  "name": "comment-service-bot",
   "version": "1.0.0",
-  "description": "A bot for interaction with a steam account.",
-  "main": "index.js",
+  "description": "A bot for requesting comments from the bot on your on profile.",
+  "main": "bot1.js",
   "dependencies": {
     "eslint": "^6.1.0",
     "nodemon": "^1.19.1",

@@ -1,5 +1,5 @@
 //Customizeable variables:
-const botname = "3urobeat's Comment Bot 2";
+const botname = "3urobeat's Comment Bot 3";
 var quotes = ['Have a nice day!','Have a wonderful day!','Have a great day!','Have a nice week!','Have a great week!','You are an amazing person','I hope you have a good day!','Have a nice day my friend','Signed by https://steamcommunity.com/id/3urobeat/'];
 //End
 
@@ -17,8 +17,8 @@ var randomstring = arr => arr[Math.floor(Math.random() * arr.length)];
 const bootstart = d()
 
 const logOnOptions = {
-  accountName: logininfo.bot2accountName,
-  password: logininfo.bot2password,
+  accountName: logininfo.bot3accountName,
+  password: logininfo.bot3password,
 };
 
 bot.logOn(logOnOptions);
@@ -27,7 +27,7 @@ bot.logOn(logOnOptions);
 bot.on('loggedOn', () => {
   console.log(' ')
   console.log('*---------------------*')
-  console.log(botname + ' successfully logged in.');
+  console.log(botname + ' version ' + config.version + ' successfully logged in.');
   bot.setPersona(config.status, botname);
   bot.gamesPlayed([config.game,730]);
   const bootend = d() - bootstart

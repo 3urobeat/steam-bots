@@ -27,7 +27,7 @@ bot.logOn(logOnOptions);
 bot.on('loggedOn', () => {
   console.log(' ')
   console.log('*---------------------*')
-  console.log(botname + ' successfully logged in.');
+  console.log(botname + ' version ' + config.version + ' successfully logged in.');
   bot.setPersona(config.status, botname);
   bot.gamesPlayed([config.game,730]);
   const bootend = d() - bootstart
