@@ -16,14 +16,15 @@ Only necessary if you want to download via command prompt:
 
 ## Downloading
 
-Click here: ([Download]https://github.com/HerrEurobeat/steam-bots/archive/master.zip)
+Click here: ([Download](https://github.com/HerrEurobeat/steam-bots/archive/master.zip))
 Extract the zip and open the `mass-comment-bot` folder.
 
 ## Setting the bot up
 
 Rename the `logininfo.json.example` to `logininfo.json`.
 Open the file with a text editor and fill out the user name and password brackets with your steam login data.
-<strong>The login data will _only_ be used to leave comments under the profiles of the provided steamIDs with one of the provided comments.</strong>
+
+**The login data will _only_ be used to leave comments under the profiles of the provided steamIDs with one of the provided comments.**
 
 Open `index.js` with a text editor. At the top of the file will be two arrays/lists, called `steamIDsToCommentOn` and `comments`.
 Fill out the two arrays like explained in the comments above the two arrays.
