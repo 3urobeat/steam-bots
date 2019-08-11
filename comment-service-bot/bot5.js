@@ -1,6 +1,15 @@
 //Customizeable variables:
+
+//Set a name for this bot:
 const botname = "3urobeat's Comment Bot 5";
-var quotes = ['Have a nice day!','Have a wonderful day!','Have a great day!','Have a nice week!','Have a great week!','You are an amazing person','I hope you have a good day!','Have a nice day my friend','Signed by https://steamcommunity.com/id/3urobeat/'];
+//Provide only one comment to comment always the same. Provide multiple comments like shown to randomize comments.
+var quotes = ['Comment1', "Comment2", "Comment3"];
+
+//Advertise your group with !group command.
+const yourgroup = "https://steamcommunity.com/groups/3urobeatGroup"
+//Advertise your own profile with !owner command.
+const owner = "https://steamcommunity.com/id/3urobeat/"
+
 //End
 
 const SteamUser = require('steam-user');
@@ -75,10 +84,10 @@ bot.on('friendMessage', function(steamID, message) {
       bot.chatMessage(steamID, 'Pong!')
       break;
     case '!owner':
-      bot.chatMessage(steamID, "Check my owner's profile: 'https://steamcommunity.com/id/3urobeat/'")
+      bot.chatMessage(steamID, "Check my owner's profile: '" + owner + "'")
       break;
     case '!group':
-      bot.chatMessage(steamID, "Join my group here: https://steamcommunity.com/groups/3urobeatGroup")
+      bot.chatMessage(steamID, "Join my group here: " + yourgroup)
       break;
     default:
       bot.chatMessage(steamID, "I don't know that command. Type !help for more info.")        
