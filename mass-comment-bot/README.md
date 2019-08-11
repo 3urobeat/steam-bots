@@ -16,7 +16,7 @@ Only necessary if you want to download via command prompt:
 
 ## Downloading
 
-Click here: ([Download](https://github.com/HerrEurobeat/steam-bots/archive/master.zip))
+Click here: [Download](https://github.com/HerrEurobeat/steam-bots/archive/master.zip)
 Extract the zip and open the `mass-comment-bot` folder.
 
 ## Setting the bot up
