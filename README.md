@@ -1,7 +1,7 @@
 <div align="center">
 	<h1 align="center">~ Steam Bots Repository ~</h1>
 	<strong>Request comments or comment with a few clicks under a bunch of profiles!</strong>
-</div>
+</div>  
 
 This repository features a small collection of steam bots.  
 The Comment Service Bot allow users to request a comment on their profile via direct message.  
