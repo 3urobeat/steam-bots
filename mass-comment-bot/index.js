@@ -8,7 +8,7 @@ const steamIDsToCommentOn = [
 
 //Add just one Comment inside the brackets to only post this specific comment on all profiles.
 //Add different comments like ["Comment1","Comment2","Comment3"] to randomly select a comment for each profile.
-const comments = ["Have a nice day! :HealthSD: :lunar2019piginablanket:","Have a great weekend! :HealthSD: :lunar2019piginablanket:","Have a wonderful weekend! :HealthSD: :lunar2019piginablanket:","I hope you have a wonderful weekend! :HealthSD: :lunar2019piginablanket:"];
+const comments = ["Comment1","Comment2","Comment3"];
 //End
 
 const SteamUser = require('steam-user');
@@ -42,6 +42,7 @@ bot.logOn(logOnOptions);
 
 //Startup
 bot.on('loggedOn', () => {
+	logger(' ')
 	logger(' ')
 	fs.appendFileSync('./output.txt', 'All IDs:\n' + steamIDsToCommentOn)
 	logger(' ')
