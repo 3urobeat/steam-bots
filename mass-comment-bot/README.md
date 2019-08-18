@@ -21,6 +21,8 @@ Extract the zip and open the `mass-comment-bot` folder.
 
 ## Setting the bot up
 
+Open a command prompt or power shell in the folder and type `npm install`. Let it install the dependencies.  
+
 Rename the `logininfo.json.example` to `logininfo.json`.  
 Open the file with a text editor and fill out the user name and password brackets with your steam login data.  
 
