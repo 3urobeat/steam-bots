@@ -1,4 +1,6 @@
 # steam-bots
- A collection of small steam bots made by me.
-
- Thanks to this guide: https://github.com/andrewda/node-steam-guide
+ The bots in this repository got moved to their own repositories.
+ This repository will stay to link them.
+ 
+ comment-service-bot: https://github.com/HerrEurobeat/steam-comment-service-bot 
+ mass-comment-bot: https://github.com/HerrEurobeat/steam-mass-comment-bot 
